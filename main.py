@@ -1,3 +1,5 @@
+# --------------------------------------------------------------------------------------------------------------------------------- #
+
 import pygame
 import random
 
@@ -6,6 +8,7 @@ width, height = 600, 400
 display = pygame.display.set_mode((width, height))
 pygame.display.set_caption("Q Learning")
 
+# --------------------------------------------------------------------------------------------------------------------------------- #
 
 class Environment:
     def __init__(self, grid):
@@ -39,13 +42,17 @@ class Environment:
             print(f"Positive State : {self.positive_terminal_state}")
             print(f"Negative State : {self.negative_terminal_state}")
         
+# --------------------------------------------------------------------------------------------------------------------------------- #
 
+# Under development
 class Agent:
     def __init__(self, environment):
         self.env = environment
         self.current_state = environment.initial_state
 
+# --------------------------------------------------------------------------------------------------------------------------------- #
 
+# Main lopp function
 def main():
     loop = True
 
@@ -57,6 +64,7 @@ def main():
 
         pygame.display.flip()
 
+# --------------------------------------------------------------------------------------------------------------------------------- #
 if __name__ == "__main__":
     grid = [
         [0, 0, 0, 1],
@@ -67,3 +75,4 @@ if __name__ == "__main__":
     env = Environment(grid)
     env.dump(True)
 
+# --------------------------------------------------------------------------------------------------------------------------------- #

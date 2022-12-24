@@ -1,5 +1,5 @@
 # Q Learning
-A playgorund repo for Q learning.
+A playground repo for Q learning.
 
 ### Usage:
 If in windows,
@@ -13,3 +13,4 @@ On unix systems,
 $ python3 main.py
 ```
 
+_*Still under development*_
